@@ -6,6 +6,10 @@ import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) throws IOException {
+        System.out.println("Printing Command Line Arguments: ");
+        for (int i=0; i< args.length; i++) {
+            System.out.println(args[i]);
+        }
         Greeting greeting = new Greeting();
         System.out.println(greeting.greet());
         System.out.println("Hello world!");
@@ -37,5 +41,12 @@ public class Main {
      * 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:168)
      * 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
      * 	... 2 more
+     */
+
+
+    /**
+     * Printing commang line arguments by executing jar:
+     *
+     * java -jar build/libs/java-scaler-01-1.0-SNAPSHOT.jar ritanshu keshari
      */
 }
